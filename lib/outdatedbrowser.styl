@@ -14,6 +14,7 @@ body,html
 	z-index: 999
 	overflow: auto
 	text-align: center
+	background: #FFF
 	a
 		border:1px solid #fff
 	.browser
@@ -31,10 +32,13 @@ body,html
 		background: #007A09;
 		color: #fff;
 	h2,h4,p
+		@extend $block
 		display:block
 		color:#333
 		font-size:18px
-		$block
+	span
+		display: inline-block;
+		margin:20px 0
 	p
 		span
 			font-size:12px
