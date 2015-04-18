@@ -1,0 +1,82 @@
+$block
+	margin:0
+	padding:0
+body,html
+	height:100%
+	@extend $block
+.outdatedbrowser
+	position: absolute
+	top: 0
+	left: 0
+	height: 100%
+	width: 100%
+	z-index: 999
+	overflow: auto
+	text-align: center
+	.browser
+		text-decoration: blink;
+		padding:30px 0 30px 0
+		display:inline-block
+		width:230px
+		overflow:hidden
+		vertical-align: middle
+		background: #E6E6E6
+		margin:0 5px 0 5px
+	.btn
+		padding: 7px 19px;
+		border-radius: 5px;
+		background: #007A09;
+		color: #fff;
+	h2,h4,p
+		display:block
+		color:#333
+		$block
+	p
+		span
+			font-size:12px
+			padding:0 5px 0 5px
+	h1
+		position:absolute
+		display:block
+		width:100%
+		padding-top:20px
+		color:#046D00
+	.split
+		display: inline-block
+		height: 100%
+		vertical-align: middle
+		
+.outdatedbrowser
+	i.icon
+		@extend $block
+		display: block
+		position: relative
+		width: 89px
+		height: 89px
+		margin: 0 auto 35px
+		background: transparent url("browsers-bg.png") no-repeat;
+	a:hover
+		.btn
+			text-decoration: underline;
+	.chrome i.icon
+		background-position: -6px -6px;
+	.firefox i.icon
+		background-position: -105px -6px;
+	.internetExplorer i.icon
+		background-position: -206px -6px;
+	.safari i.icon
+		background-position: -306px -6px;
+	.opera i.icon
+		background-position: -406px -6px;
+		
+	.chrome:hover i.icon
+		background-position: -6px -108px;
+	.firefox:hover i.icon
+		background-position: -105px -108px;
+	.internetExplorer:hover i.icon
+		background-position: -206px -108px;
+	.safari:hover i.icon
+		background-position: -306px -108px;
+	.opera:hover i.icon
+		background-position: -406px -108px;
+		
