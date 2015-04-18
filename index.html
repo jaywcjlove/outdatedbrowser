@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="outdatedbrowser.css">
 </head>
 <body>
-<div class="outdatedbrowser">
+<!-- <div class="outdatedbrowser">
     <h1>请更新浏览器</h1>
     <span class="split"></span>
     <a class="browser chrome" href="#">
@@ -36,9 +36,17 @@
         <h4>在以下操作系统可用 </h4>
         <p><span class="windows">Windows</span><span class="windows">Mac OS</span><span class="windows">Linux</span></p>
     </a>
-</div>
+</div> -->
 <script type="text/javascript">
-    // window.outdatedbrowser()
+    window.outdatedbrowser({
+        "firefox":{
+            "url":"http://baidu.com"
+        }
+
+    })
+
+    var  a = new outdatedbrowser()
+    console.log(a.browser)
 </script>
 </body>
 </html>
