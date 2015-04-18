@@ -13,28 +13,28 @@ module.exports = function(grunt) {
             },
             app_task: {
                 files: {
-                    // 'build/JSLite.min.js': ['src/ie.js', 'src/JSLite.js']
+                    'build/outdatedbrowser.min.js': ['lib/outdatedbrowser.js']
                 }
             }
         },
         stylus:{
             build: {
                 options: {
-                    linenos: false,
-                    compress: false,
+                    // linenos: false,
+                    compress: true,
                     banner: '\/** \n * <%= pkg.name %> - <%= pkg.description %>\n * version <%= pkg.version %> \n * author <%= pkg.author %>  \n**/\n'
                     //<%= grunt.template.today() %>时间
                 },
                 files: [{
-                    'outdatedbrowser.css': 'outdatedbrowser.styl'
+                    'test/outdatedbrowser.css': 'lib/outdatedbrowser.styl'
                 }]
             }
         },
         // watch插件的配置信息
         watch: {
             another: {
-                files: ['outdatedbrowser.css','outdatedbrowser.styl'],
-                tasks: ['stylus'],
+                files: ['lib/*','test/*'],
+                tasks: ['stylus','uglify'],
                 options: {
                     // Start another live reload server on port 1337
                     livereload: 1337
