@@ -23,6 +23,9 @@ html {
   overflow: auto;
   text-align: center;
 }
+.outdatedbrowser a {
+  border: 1px solid #fff;
+}
 .outdatedbrowser .browser {
   text-decoration: blink;
   padding: 30px 0 30px 0;
@@ -44,6 +47,7 @@ html {
 .outdatedbrowser p {
   display: block;
   color: #333;
+  font-size: 18px;
 $block
 }
 .outdatedbrowser p span {
