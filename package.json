@@ -1,6 +1,6 @@
 {
   "name": "outdatedbrowser",
-  "version":"0.0.1",
+  "version": "0.0.1",
   "author": "kenny wang <wowohoo@qq.com> (http://JSLite.io)",
   "description": "过时的浏览器，更新浏览器。",
   "devDependencies": {
